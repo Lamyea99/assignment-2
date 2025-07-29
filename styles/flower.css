@@ -1,4 +1,5 @@
 
+
 .orange{color:#E95A08;}
 .grey{color: #8987A1;}
 .grey-font{font-size: 1.3rem;
@@ -13,6 +14,8 @@ color: white;}
 .center{text-align: center;}
 a{text-decoration: none;
 color: #8987A1;}
+.shop{text-decoration: none;
+color: white;}
 button:hover{background-color: darkgoldenrod;
 color: black;}
 
@@ -88,14 +91,14 @@ height: 206px;
 .underline{text-decoration: underline;
 color: white;}
 .deals{color: white;
-flex-direction: column;
+   display: block;
 gap: 4px;
 text-align: center;
 align-content: center;
 font-size: 1.2rem;
 font-weight: bold;
 border-radius: 10px;
-margin-bottom: 20px;
+margin-bottom: 5px;
 }
 .box-4{background-image: url("../assets/deal-zabo.png");
    background-repeat: no-repeat;
@@ -103,7 +106,8 @@ margin-bottom: 20px;
    background-color: rgba(0, 0, 0, 0.5);
 background-blend-mode: darken;
 width: 750px;
-height: 425px; 
+height: 425px;
+font-size: 1.5rem; 
 }
 .latest-deals{
    display: flex;
@@ -171,7 +175,7 @@ align-items: center;}
    }
    .box-4,.deals{
       width: 370px;
-   height: 206px;}
+   height: 200px;}
    .branch{height: 40vh;}
    footer{flex-direction: column;}
    .links{grid-template-columns: repeat(1,1fr);}
