@@ -11,6 +11,10 @@ border: none;
 color: white;}
 .long{width: 100%;}
 .center{text-align: center;}
+a{text-decoration: none;
+color: #8987A1;}
+button:hover{background-color: darkgoldenrod;
+color: black;}
 
 /* navber styles*/
 .flex{display: flex;}
@@ -110,22 +114,66 @@ height: 425px;
    margin: 0 auto;
    margin-top: 40px;
 }
-
+/* branch section*/
+.branch{background-image: url("../assets/news-letter-bg.png");
+background-repeat: no-repeat;
+background-size:100% 100%;
+width: 100vw;
+height: 75vh;
+margin-top: 120px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+box-shadow: 15px 2px 12px;}
+.branch-color{font-size: 3.1rem;
+font-size: bold;
+color: white;
+text-align: center;
+margin-bottom: 30px;
+}
+.branch-items{display: flex;
+align-items: center;}
+.order{
+   width: 40vw;
+height: 50px;
+padding-left: 15px;}
+.submit{width: 18vw;
+height: 55px;
+padding: 20 50;
+border: none;
+font-size: 0.9rem;}
+/*footer section*/
+.icon{display: flex;
+align-items: center;
+gap: 10px;}
+footer{display: flex;
+justify-content: space-evenly;
+align-items: flex-start;
+margin-top: 70px;}
+.links{display: grid;
+   grid-template-columns: repeat(2,1fr);
+gap: 20px;
+align-items: center;}
+.bottom{margin-bottom: 20px;}
 
 /*mobile responsive*/
 @media screen and (max-width: 576px){
-   .hidden, .badge{display: none;} 
+   .hidden,.badge{display: none;} 
    .banner{flex-direction: column-reverse;}
    .fresh-flower{width: 100%;}
    .our-plants-items{grid-template-columns: repeat(2,1fr);}
 
    .plants-lover{flex-direction: column;}
-   .our-plants-items,.plants-lover,.our-plants,.fresh-flower{max-width: 95%;
-   margin: 0 auto;}
+   .our-plants-items,.plants-lover,.our-plants,.fresh-flower{max-width: 95%;}
    .plants-lover,.our-plants-items{margin-top: 30px;}
    .latest-deals{flex-direction: column;
    }
    .box-4,.deals{
       width: 370px;
    height: 206px;}
+   .branch{height: 40vh;}
+   footer{flex-direction: column;}
+   .links{grid-template-columns: repeat(1,1fr);}
+   .branch{box-shadow: none;}
 }
